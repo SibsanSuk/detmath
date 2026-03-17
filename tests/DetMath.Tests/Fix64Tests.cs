@@ -30,7 +30,7 @@ internal static class Fix64Tests
 
     public static void ClampLimitsToBounds()
     {
-        Fix64 result = Fix64.Clamp(Fix64.FromInt(9), Fix64.Zero, Fix64.FromInt(5));
+        Fix64 result = DetMathf.Clamp(Fix64.FromInt(9), Fix64.Zero, Fix64.FromInt(5));
 
         AssertEx.Equal(Fix64.FromInt(5), result, "Clamp should limit values above max.");
     }

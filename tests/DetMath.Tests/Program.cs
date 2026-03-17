@@ -18,7 +18,11 @@ internal static class Program
             ("Fix64.ToIntTruncateNegative", Fix64Tests.ToIntTruncateNegative),
             ("DetVector2.DotProductUsesFixedPointMath", DetVector2Tests.DotProductUsesFixedPointMath),
             ("DetVector2.ScalingAppliesToBothAxes", DetVector2Tests.ScalingAppliesToBothAxes),
-            ("GridPoint.ManhattanDistanceMatchesTileTravel", GridPointTests.ManhattanDistanceMatchesTileTravel)
+            ("GridPoint.ManhattanDistanceMatchesTileTravel", GridPointTests.ManhattanDistanceMatchesTileTravel),
+            ("GridPoint.ChebyshevDistanceDiagonalOnly",      GridPointTests.ChebyshevDistanceDiagonalOnly),
+            ("GridPoint.ChebyshevDistanceMixedPath",         GridPointTests.ChebyshevDistanceMixedPath),
+            ("GridPoint.ChebyshevDistanceIsSymmetric",       GridPointTests.ChebyshevDistanceIsSymmetric),
+            ("GridPoint.ChebyshevDistanceSamePoint",         GridPointTests.ChebyshevDistanceSamePoint)
         };
 
         int passed = 0;

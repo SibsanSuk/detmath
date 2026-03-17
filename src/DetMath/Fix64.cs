@@ -91,41 +91,6 @@ public readonly struct Fix64 : IEquatable<Fix64>, IComparable<Fix64>
             fraction);
     }
 
-    public static Fix64 Abs(Fix64 value)
-    {
-        return value.RawValue < 0 ? new Fix64(checked(-value.RawValue)) : value;
-    }
-
-    public static Fix64 Min(Fix64 left, Fix64 right)
-    {
-        return left.RawValue <= right.RawValue ? left : right;
-    }
-
-    public static Fix64 Max(Fix64 left, Fix64 right)
-    {
-        return left.RawValue >= right.RawValue ? left : right;
-    }
-
-    public static Fix64 Clamp(Fix64 value, Fix64 min, Fix64 max)
-    {
-        if (min > max)
-        {
-            throw new ArgumentException("Min cannot be greater than max.");
-        }
-
-        if (value < min)
-        {
-            return min;
-        }
-
-        if (value > max)
-        {
-            return max;
-        }
-
-        return value;
-    }
-
     public static Fix64 operator +(Fix64 left, Fix64 right)
     {
         return new Fix64(checked(left.RawValue + right.RawValue));

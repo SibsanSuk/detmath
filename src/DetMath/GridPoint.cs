@@ -21,6 +21,11 @@ public readonly struct GridPoint : IEquatable<GridPoint>
         return Math.Abs(X - other.X) + Math.Abs(Y - other.Y);
     }
 
+    public int ChebyshevDistance(GridPoint other)
+    {
+        return Math.Max(Math.Abs(X - other.X), Math.Abs(Y - other.Y));
+    }
+
     public bool Equals(GridPoint other)
     {
         return X == other.X && Y == other.Y;
