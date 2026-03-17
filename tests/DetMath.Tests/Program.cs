@@ -22,7 +22,27 @@ internal static class Program
             ("GridPoint.ChebyshevDistanceDiagonalOnly",      GridPointTests.ChebyshevDistanceDiagonalOnly),
             ("GridPoint.ChebyshevDistanceMixedPath",         GridPointTests.ChebyshevDistanceMixedPath),
             ("GridPoint.ChebyshevDistanceIsSymmetric",       GridPointTests.ChebyshevDistanceIsSymmetric),
-            ("GridPoint.ChebyshevDistanceSamePoint",         GridPointTests.ChebyshevDistanceSamePoint)
+            ("GridPoint.ChebyshevDistanceSamePoint",         GridPointTests.ChebyshevDistanceSamePoint),
+            ("DetMathf.AbsPositive",                         DetMathfTests.AbsPositive),
+            ("DetMathf.AbsNegative",                         DetMathfTests.AbsNegative),
+            ("DetMathf.AbsZero",                             DetMathfTests.AbsZero),
+            ("DetMathf.MinReturnsSmaller",                   DetMathfTests.MinReturnsSmaller),
+            ("DetMathf.MinBothEqual",                        DetMathfTests.MinBothEqual),
+            ("DetMathf.MaxReturnsLarger",                    DetMathfTests.MaxReturnsLarger),
+            ("DetMathf.ClampBelowMin",                       DetMathfTests.ClampBelowMin),
+            ("DetMathf.ClampAboveMax",                       DetMathfTests.ClampAboveMax),
+            ("DetMathf.ClampWithinRange",                    DetMathfTests.ClampWithinRange),
+            ("DetMathf.LerpAtZero",                          DetMathfTests.LerpAtZero),
+            ("DetMathf.LerpAtOne",                           DetMathfTests.LerpAtOne),
+            ("DetMathf.LerpAtHalf",                          DetMathfTests.LerpAtHalf),
+            ("DetMathf.LerpClampsAboveOne",                  DetMathfTests.LerpClampsAboveOne),
+            ("Display.ProgressBar_Zero",                     DisplayTests.ProgressBar_Zero),
+            ("Display.ProgressBar_Full",                     DisplayTests.ProgressBar_Full),
+            ("Display.ProgressBar_Half",                     DisplayTests.ProgressBar_Half),
+            ("Display.ProgressBar_ThreeQuarters",            DisplayTests.ProgressBar_ThreeQuarters),
+            ("Display.ProgressBar_OverFull",                 DisplayTests.ProgressBar_OverFull),
+            ("Display.ProgressBar_ClampsBeforeDisplay",      DisplayTests.ProgressBar_ClampsBeforeDisplay),
+            ("Display.ProgressBar_IntegerDivisionDoesNotLoseMeaning", DisplayTests.ProgressBar_IntegerDivisionDoesNotLoseMeaning)
         };
 
         int passed = 0;
